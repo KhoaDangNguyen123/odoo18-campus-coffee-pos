@@ -7,10 +7,7 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='partner_id']" position="after">
                 <field name="order_type" widget="radio" options="{'horizontal': true}"/>
-                <field name="barista_status" widget="badge"
-                       decoration-warning="barista_status == 'waiting'"
-                       decoration-info="barista_status == 'preparing'"
-                       decoration-success="barista_status == 'done'"/>
+                <field name="barista_status" widget="radio" options="{'horizontal': true}"/>
                 <field name="barista_note" placeholder="Nhập mức đường, đá hoặc yêu cầu riêng..."/>
             </xpath>
         </field>
